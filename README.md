@@ -11,7 +11,7 @@ Another thing to note is, we have not used any 3rd party library such as thunk/s
 
 1. **Clone the React app repo from GitHub**
    ```sh
-   git clone https://github.com/Er-Rahul-Tiwari/.git
+   git clone https://github.com/Er-Rahul-Tiwari/Saltriver.git
    ```
 2. **Install npm dependencies**
    ```sh

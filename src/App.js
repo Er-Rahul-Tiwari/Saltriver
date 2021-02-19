@@ -20,20 +20,20 @@ const App = ({ user, dispatchLogoutAction }) => {
       <Header isLoggedIn={user.isLoggedIn} userName={user.fullName}
         onLogout={dispatchLogoutAction} />
       <div className="container my-5">
-        {/* {!user.isLoggedIn ? */}
-          {/* ( */}
+        {!user.isLoggedIn ?
+          (
             <Switch>
-            {/* <Route exact path="/auth" component={AuthPage} />
-            <Redirect to="/auth" /> */}
-          {/* </Switch>) : */}
-          {/* (<Switch> */}
+            <Route exact path="/auth" component={AuthPage} />
+            <Redirect to="/auth" />
+          </Switch>) :
+          (<Switch>
             <Route exact path="/notes" component={NotesPage} />
             <Route exact path="/edit-note" component={EditNotePage} />
             <Route exact path="/edit-note/:noteId" component={EditNotePage} />
             <Redirect to="/notes" />
           </Switch>
-          {/* ) */}
-        {/* } */}
+          )
+        }
       </div>
     </React.Fragment>
   );
